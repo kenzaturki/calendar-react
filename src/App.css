@@ -43,3 +43,8 @@
 .appDate{
  color: rgb(39, 38, 38);
 }
+
+.delete{
+  text-align: right;
+  margin: auto;
+}

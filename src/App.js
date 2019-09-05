@@ -2,6 +2,9 @@ import React, {Component} from 'react'
 import Calendar from 'react-calendar'
 import TimeField from 'react-simple-timefield'
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import * as Icons from "@fortawesome/free-solid-svg-icons"
+
 import cookie from 'react-cookies'
 
 import './App.css'
@@ -36,7 +39,16 @@ class App extends Component {
     this.setState({title:'', date: new Date(), time: '09:00', appointments: newAppointments})
     cookie.save('appointments', newAppointments)
   }
+ 
+  onTrashClick = lom => {
+    const appointments = this.state.appointments
+    var newAppointments = appointments
 
+    newAppointments.splice(lom,1)
+    this.setState({appointment: newAppointments})
+    cookie.save('appointments', newAppointments)
+
+  }
 
   render() {
     const {title, date, time, appointments} = this.state
@@ -49,7 +61,6 @@ class App extends Component {
           <p>
               <input 
                 type = "text"
-                defaultValue="New appointment"
                 placeholder="Make a new appoitment"
                 className="title"
                 maxLength={30}
@@ -70,17 +81,15 @@ class App extends Component {
           </p>
           <div className="appointment">
             {appointments.map((appointment, index) => (
-              <div>
+              <div key={index}>
                 <p className="appTitle">
                   {appointment[0]}
                 </p>
                 <p className="appDate">
                   {appointment[1]}
                 </p>
+                <FontAwesomeIcon icon={Icons.faTrashAlt} className="delete" color="	#778899" onClick={()=>this.onTrashClick(index)}/>
                 <hr 
-                  style={{
-                    color: "black",
-                  }}
                 />
               </div>
             ))}
