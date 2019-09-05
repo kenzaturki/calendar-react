@@ -42,10 +42,15 @@ class App extends Component {
     const {title, date, time, appointments} = this.state
     return (
       <div className="app">
+        <p className="make">
+          Agenda
+        </p>
         <form onSubmit={this.addAppointment}>
           <p>
               <input 
                 type = "text"
+                defaultValue="New appointment"
+                placeholder="Make a new appoitment"
                 className="title"
                 maxLength={30}
                 onChange={this.handleTitleChange}  

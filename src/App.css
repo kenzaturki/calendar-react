@@ -8,6 +8,11 @@
   background-color: brown;
 }
 
+.make{
+  font-size: 1.5em;
+  color:white;
+  margin-top: 20px;
+}
 .calendar{
   text-align: center;
   margin:auto;
@@ -15,7 +20,6 @@
 
 .title{
   border-color:brown;
-  margin-top: 30px;
 }
 
 .button{
