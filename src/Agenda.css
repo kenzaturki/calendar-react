@@ -1,0 +1,50 @@
+.agenda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 785px;
+    background-color: brown;
+  }
+  
+  .title{
+    font-size: 1.5em;
+    color:white;
+    margin-top: 20px;
+  }
+  
+  .calendar{
+    margin:auto;
+  }
+  
+  .input{
+    border-color:brown;
+  }
+  
+  .button{
+    font-weight: bold;
+    background-color: rgb(128, 41, 41);
+    color: white;
+    width: 150px;
+    height: 80px;
+    margin-top: 30px;  
+  }
+  
+  .appointment{
+    align-self: stretch;
+    text-align: left;
+    margin-left: 20px;
+    overflow: auto;
+    height:200px;
+  }
+  .appTitle{
+    color: rgb(39, 38, 38);
+    font-weight: bold;
+  }
+  .appDate{
+   color: rgb(39, 38, 38);
+  }
+  
+  .delete{
+    text-align: right;
+  }

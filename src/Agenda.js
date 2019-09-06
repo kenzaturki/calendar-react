@@ -7,7 +7,7 @@ import * as Icons from "@fortawesome/free-solid-svg-icons"
 
 import cookie from 'react-cookies'
 
-import './App.css'
+import './Agenda.css'
 
 class Agenda extends Component {
   state = {
