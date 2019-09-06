@@ -1,0 +1,34 @@
+  .appointment{
+    align-self: stretch;
+    padding: 0 20px;
+    overflow: scroll;
+    height:200px;
+  }
+  
+  .block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .flex1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .appTitle{
+    color: rgb(39, 38, 38);
+    font-weight: bold; 
+    margin : 5px 0;
+  }
+  .appDate{
+   color: rgb(39, 38, 38);
+   margin: 5px 0;
+  }
+  
+  .delete{
+    align-self: flex-end;
+  }

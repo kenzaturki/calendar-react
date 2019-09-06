@@ -30,21 +30,3 @@
     margin-top: 30px;  
   }
   
-  .appointment{
-    align-self: stretch;
-    text-align: left;
-    margin-left: 20px;
-    overflow: auto;
-    height:200px;
-  }
-  .appTitle{
-    color: rgb(39, 38, 38);
-    font-weight: bold;
-  }
-  .appDate{
-   color: rgb(39, 38, 38);
-  }
-  
-  .delete{
-    text-align: right;
-  }
